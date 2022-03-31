@@ -1,2 +1,2 @@
-# Tesseract-Jewelry-Store-
+# Tesseract-Jewelry-Store
 Placeholder Description
