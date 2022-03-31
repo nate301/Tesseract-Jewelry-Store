@@ -59,7 +59,6 @@ nav {
 .navList li a {
     color: white;
     font-size: 20px;
-    text-transform: uppercase;
 }
 
 .navList li a.active, .navList li a:hover {
@@ -86,4 +85,61 @@ nav {
 
 #check:checked ~ .navList li {
     display: block;
+}
+
+/* end of navigation */
+
+h1 {
+    padding: 10px 10px 10px 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.ringImg {
+    width: 25%;
+}
+
+.productImg {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    place-items: center;
+}
+
+@media only screen and (min-width: 952px) {
+
+    .logoContainer {
+        margin-left: 25px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .navList {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        float: right;
+        text-align: right;
+        margin-right: 25px;
+        transition: none;
+    }
+
+    .navList li {
+        display: inline-block;
+        opacity: 1;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .navList li a.active, .navList li a:hover {
+        color: white;
+    }
 }
