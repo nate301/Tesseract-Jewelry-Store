@@ -117,6 +117,11 @@ h1 {
     border: 2px;
 }
 
+.productBtn {
+    position: fixed;
+    align-self: end;
+} 
+
 @media only screen and (min-width: 480px) and (max-width: 1030px) {
 
     h1 {
@@ -203,4 +208,5 @@ h1 {
         margin: 25px 10px 25px 10px;
         border: 2px;
     }
+
 }
