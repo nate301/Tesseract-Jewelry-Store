@@ -132,7 +132,15 @@ h1 {
     .ringImg {
         width: 100%
     }
-}
+
+    .productBox { 
+        padding: 2px;
+        background-color: #006271;
+        margin: 25px 0 25px 0;
+        border: 2px;
+    }
+
+}    
 
 @media only screen and (min-width: 1031px) {
 
@@ -186,6 +194,13 @@ h1 {
 
     .ringImg {
         width: 100%;
-        height: 100%
+        height: 100%;
+    }
+
+    .productBox { 
+        padding: 2px;
+        background-color: #006271;
+        margin: 25px 10px 25px 10px;
+        border: 2px;
     }
 }
