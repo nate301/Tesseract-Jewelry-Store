@@ -11,7 +11,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* navigation */
+/* navigation (for mobile & tablet view) */
 nav {
     height: 75px;
     width: 100%;
@@ -90,23 +90,43 @@ nav {
 /* end of navigation */
 
 h1 {
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px;
     font-size: 1.5em;
     text-align: center;
 }
 
 .ringImg {
     width: 25%;
+    height: auto;
 }
 
 .productImg {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     place-items: center;
+    padding: 15rem auto;
 }
 
-@media only screen and (min-width: 952px) {
+@media only screen and (min-width: 480px) and (max-width: 1030px) {
+
+    h1 {
+        width: 100%
+    }
+
+    .productImg {
+        grid-template-columns: 20em 20em;
+        grid-template-rows: 20em 20em;
+    }
+
+    .ringImg {
+        width: 50%
+    }
+}
+
+@media only screen and (min-width: 1031px) {
+
+    /* navigation (for desktop view) */
 
     .logoContainer {
         margin-left: 25px;
@@ -141,5 +161,21 @@ h1 {
 
     .navList li a.active, .navList li a:hover {
         color: white;
+    }
+
+    /* end of desktop navigation */
+
+    h1 {
+        width: 100%;
+    }
+
+    .productImg {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20em;
+    }
+
+    .ringImg {
+        width: 80%;
+        height: 100%
     }
 }
