@@ -1,4 +1,4 @@
-/* General Styling */
+/* start of general styling */
 * {
     padding: 0;
     margin: 0;
@@ -10,8 +10,9 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* end of general styling */
 
-/* navigation (for mobile & tablet view) */
+/* start of mobile & tablet navigation styling */
 nav {
     height: 75px;
     width: 100%;
@@ -87,7 +88,7 @@ nav {
     display: block;
 }
 
-/* end of navigation */
+/* end of mobile & tablet navigation styling */
 
 h1 {
     padding: 10px 10px;
@@ -102,10 +103,11 @@ h1 {
 
 .productImg {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20em;
+    grid-template-rows: 20em 20em 20em 20em;
     place-items: center;
-    padding: 5px 5px;;
+    padding: 0px;
+    align-items: flex-end;
 }
 
 .productBox {
@@ -118,9 +120,18 @@ h1 {
 }
 
 .productBtn {
-    position: fixed;
+    position: relative;
     align-self: end;
-} 
+}
+
+.price1 {
+    display: grid;
+    grid: 200px auto 300px / repeat(10, 1fr) 250px;
+   grid-row-start: 1;
+   grid-row-end: 2;
+}
+
+/* media query for tablet */
 
 @media only screen and (min-width: 480px) and (max-width: 1030px) {
 
@@ -147,9 +158,11 @@ h1 {
 
 }    
 
+/* media query for desktop */
+
 @media only screen and (min-width: 1031px) {
 
-    /* navigation (for desktop view) */
+    /* start of desktop navigation styling */
 
     .logoContainer {
         margin-left: 25px;
@@ -186,7 +199,7 @@ h1 {
         color: white;
     }
 
-    /* end of desktop navigation */
+    /* end of desktop navigation styling */
 
     h1 {
         width: 100%;
@@ -198,8 +211,9 @@ h1 {
     }
 
     .ringImg {
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        max-height: 130px;
+        min-height: 130px;
     }
 
     .productBox { 
