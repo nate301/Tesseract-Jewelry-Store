@@ -96,9 +96,9 @@ h1 {
     text-align: center;
 }
 
-.ringImg {
-    width: 10em;
-    height: 10em;
+.jewelryImg {
+    width: 160px;
+    height: 130px;
 }
 
 .productImgGrid {
@@ -106,18 +106,25 @@ h1 {
     width: 80%;
     margin: auto;
     grid-template-columns: 20em;
-    grid-template-rows: 20em 20em 20em 20em 20em 20em;
+    grid-template-rows: 20em 20em 20em 20em 20em 20em 20em 20em;
     place-items: center;
     justify-content: center;
 }
 
 .productBox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 2px;
     background-color: #006271;
     margin: 10px 0px 10px 0px;
     border: 2px;
+}
+
+.Price {
+    padding: 5px;
+    background-color: #c0c0c0;
+    text-align: center;
 }
 
 /* media query for tablet */
@@ -135,7 +142,8 @@ h1 {
     }
 
     .ringImg {
-        width: 100%
+        width: 160px;
+        height: 130px;
     }
 
     .productBox { 
@@ -200,9 +208,8 @@ h1 {
     }
 
     .ringImg {
-        max-width: 100%;
-        max-height: 130px;
-        min-height: 130px;
+        width: 160px;
+        height: 130px;
     }
 
     .productBox { 
