@@ -126,6 +126,46 @@ h1 {
     font-weight: bold;
 }
 
+#contactArea {
+    display: flex;
+    justify-content: center;
+}
+
+#contactMsg {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#siteContactForm {
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+#nameLabel {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+#emailLabel {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+#submitBtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #006271;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+}
 /* media query for tablet */
 
 @media only screen and (min-width: 480px) and (max-width: 1030px) {
