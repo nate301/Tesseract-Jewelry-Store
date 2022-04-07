@@ -14,7 +14,7 @@ body {
 
 /* start of mobile & tablet navigation styling */
 nav {
-    height: 75px;
+    height: 95px;
     width: 100%;
     background-color: #006271;
     display: flex;
@@ -101,13 +101,14 @@ h1 {
     height: 10em;
 }
 
-.productImg {
+.productImgGrid {
     display: grid;
+    width: 80%;
+    margin: auto;
     grid-template-columns: 20em;
-    grid-template-rows: 20em 20em 20em 20em;
+    grid-template-rows: 20em 20em 20em 20em 20em 20em;
     place-items: center;
-    padding: 0px;
-    align-items: flex-end;
+    justify-content: center;
 }
 
 .productBox {
@@ -115,20 +116,8 @@ h1 {
     justify-content: center;
     padding: 2px;
     background-color: #006271;
-    margin: 10px 0 10px 0;
+    margin: 10px 0px 10px 0px;
     border: 2px;
-}
-
-.productBtn {
-    position: relative;
-    align-self: end;
-}
-
-.price1 {
-    display: grid;
-    grid: 200px auto 300px / repeat(10, 1fr) 250px;
-   grid-row-start: 1;
-   grid-row-end: 2;
 }
 
 /* media query for tablet */
@@ -139,7 +128,7 @@ h1 {
         width: 100%
     }
 
-    .productImg {
+    .productImgGrid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         
@@ -205,7 +194,7 @@ h1 {
         width: 100%;
     }
 
-    .productImg {
+    .productImgGrid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 20em;
     }
