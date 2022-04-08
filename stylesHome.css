@@ -137,7 +137,15 @@ h1 {
     margin-top: 20px;
 }
 
-#siteContactForm {
+#error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: red;
+}
+
+#form {
     display: flex;
     justify-content: center;
    flex-direction: column;
